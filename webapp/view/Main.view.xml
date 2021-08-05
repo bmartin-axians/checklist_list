@@ -1,0 +1,50 @@
+<mvc:View controllerName="com.hella.ppm.CheckListItems.controller.Main"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}" class="sapUiContentPadding"
+				navButtonPress="onBack" showNavButton="true">
+				<content>
+					<Table id="idCheckListItems" class="sapUiSizeCompact" mode="SingleSelectMaster"
+						selectionChange="onSelectItem">
+						<headerToolbar>
+							<Toolbar>
+								<ToolbarSpacer />
+								<CheckBox id="idFilterBox" selected="false" visible="false"/>
+								<Button icon="sap-icon://sort" press="onSortButtonPressed" />
+								<Button icon="sap-icon://filter" press="onFilterButtonPressed" />
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column>
+								<Text text="{i18n>checklistName}" />
+							</Column>
+							<Column>
+								<Text text="{i18n>checklistItemName}" />
+							</Column>
+							<Column>
+								<Text text="{i18n>severity}" />
+							</Column>
+							<Column>
+								<Text text="{i18n>status}" />
+							</Column>
+							<Column>
+								<Text text="{i18n>respUser}" />
+							</Column>
+							<Column>
+								<Text text="{i18n>result}" />
+							</Column>
+<!-- 							<Column> -->
+<!-- 								<Text text="{i18n>priority}" /> -->
+<!-- 							</Column> -->
+							<Column>
+								<Text text="{i18n>dueDate}" />
+							</Column>
+						</columns>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

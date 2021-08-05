@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog confirm="onConfirm" filterSearchOperator="Contains">
+		<sortItems>
+			<ViewSettingsItem text="{i18n>checklistname}" key="Checklistname"
+				selected="true" />
+			<ViewSettingsItem text="{i18n>checklistItemName}" key="Itemname" />
+			<ViewSettingsItem text="{i18n>severity}" key="SevIcon" />
+			<ViewSettingsItem text="{i18n>status}" key="Status" />
+			<ViewSettingsItem text="{i18n>respUser}" key="RespUser" />
+			<ViewSettingsItem text="{i18n>result}" key="Itemresult" />
+			<ViewSettingsItem text="{i18n>dueDate}" key="Duedate" />
+		</sortItems>
+		<filterItems>
+			<ViewSettingsFilterItem text="{i18n>checklistName}"
+				key="Checklistname" selected="true" />
+			<ViewSettingsFilterItem text="{i18n>checklistItemName}"
+				key="Itemname" />
+			<ViewSettingsFilterItem text="{i18n>severity}"
+				key="SevText" />
+			<ViewSettingsFilterItem text="{i18n>status}"
+				key="Status" />
+			<ViewSettingsFilterItem text="{i18n>respUser}"
+				key="RespUser" />
+			<ViewSettingsFilterItem text="{i18n>result}"
+				key="Itemresult" />
+			<ViewSettingsFilterItem text="{i18n>dueDate}"
+				key="Duedate" />
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>
